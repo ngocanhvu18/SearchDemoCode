@@ -13,6 +13,7 @@
 		2F4BDB8B20B914A500332E85 /* SearchDemoCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F4BDB8920B914A500332E85 /* SearchDemoCode.xcdatamodeld */; };
 		2F4BDB8D20B914A500332E85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4BDB8C20B914A500332E85 /* Assets.xcassets */; };
 		2F4BDB9020B914A500332E85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4BDB8E20B914A500332E85 /* LaunchScreen.storyboard */; };
+		2F4BDB9820B914BE00332E85 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4BDB9720B914BE00332E85 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2F4BDB8C20B914A500332E85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F4BDB8F20B914A500332E85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F4BDB9120B914A500332E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F4BDB9720B914BE00332E85 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				2F4BDB8220B914A500332E85 /* AppDelegate.swift */,
 				2F4BDB8420B914A500332E85 /* ViewController.swift */,
 				2F4BDB8620B914A500332E85 /* Main.storyboard */,
+				2F4BDB9720B914BE00332E85 /* TableViewController.swift */,
 				2F4BDB8C20B914A500332E85 /* Assets.xcassets */,
 				2F4BDB8E20B914A500332E85 /* LaunchScreen.storyboard */,
 				2F4BDB9120B914A500332E85 /* Info.plist */,
@@ -142,6 +145,7 @@
 				2F4BDB8B20B914A500332E85 /* SearchDemoCode.xcdatamodeld in Sources */,
 				2F4BDB8520B914A500332E85 /* ViewController.swift in Sources */,
 				2F4BDB8320B914A500332E85 /* AppDelegate.swift in Sources */,
+				2F4BDB9820B914BE00332E85 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
