@@ -11,13 +11,13 @@ import UIKit
 class TableViewController: UITableViewController, UISearchResultsUpdating, UISearchControllerDelegate{
     
     
-    @IBOutlet var tableViewController: UITableView!
+   
     
     let city = ["New York, NY", "Los Angeles, CA", "Chicago, IL", "Houston, TX",
                 "Philadelphia, PA", "Phoenix, AZ", "San Diego, CA", "San Antonio, TX",
                 "Dallas, TX", "Detroit, MI", "San Jose, CA", "Indianapolis, IN",
                 "Jacksonville, FL", "San Francisco, CA", "Columbus, OH", "Austin, TX",
-                "Memphis, TN", "Baltimore, MD", "Charlotte, ND", "Fort Worth, TX"]
+                "Memphis, TN", "Baltimore, MD", "Charlotte, ND", "Fort Worth, TX","Dương Ml","Chim Ngắn Dương","Chim Bé Dương", "Dương không chim"]
     
     var filterdData: [String]!
     
@@ -25,11 +25,10 @@ class TableViewController: UITableViewController, UISearchResultsUpdating, UISea
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = self
         filterdData = city
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
-        searchController.dimsBackgroundDuringPresentation = false
+        searchController.dimsBackgroundDuringPresentation = true
         searchController.delegate = self
         searchController.searchBar.sizeToFit()
         tableView.tableHeaderView = searchController.searchBar
@@ -65,12 +64,31 @@ class TableViewController: UITableViewController, UISearchResultsUpdating, UISea
     
     func updateSearchResults(for searchController: UISearchController) {
         if let searchText = searchController.searchBar.text {
-            filterdData = searchText.isEmpty ? city : city.filter({(dataString: String) -> Bool in
-                return dataString.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
-            })
+            if  searchText.isEmpty {
+                filterdData = city
+            } else {
+                filterdData = city.filter({ (data) -> Bool in
+                    return data.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+                })
+                
+            }
+//            filterdData = searchText.isEmpty ? city : city.filter({(dataString: String) -> Bool in
+//                return dataString.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+//            })
             
             tableView.reloadData()
         }
+    }
+    
+    
+    func fillter(_ array: [String], searchText: String) -> [String] {
+        var datas: [String] = []
+        for data in city {
+            if data.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil {
+                datas.append(data)
+            }
+        }
+        return datas
     }
     
     /*
@@ -119,3 +137,10 @@ class TableViewController: UITableViewController, UISearchResultsUpdating, UISea
      */
     
 }
+
+//extension Collection {
+//    func filter() -> Collection {
+//        
+//    }
+//}
+

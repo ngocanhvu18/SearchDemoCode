@@ -32,9 +32,6 @@
                             <outlet property="delegate" destination="pVL-e9-QFN" id="PNs-m5-BsA"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <outlet property="tableViewController" destination="phz-hs-lhz" id="F0p-Gh-fPO"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D7g-kx-dFr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
