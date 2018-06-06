@@ -81,16 +81,16 @@ class TableViewController: UITableViewController, UISearchResultsUpdating, UISea
     }
     
     
-    func fillter(_ array: [String], searchText: String) -> [String] {
-        var datas: [String] = []
-        for data in city {
-            if data.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil {
-                datas.append(data)
-            }
-        }
-        return datas
-    }
-    
+//    func fillter(_ array: [String], searchText: String) -> [String] {
+//        var datas: [String] = []
+//        for data in city {
+//            if data.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil {
+//                datas.append(data)
+//            }
+//        }
+//        return datas
+//    }
+//    
     /*
      // Override to support conditional editing of the table view.
      override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
